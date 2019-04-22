@@ -36,6 +36,7 @@ namespace Dealership {
         Console.WriteLine(automobile.GetMakeModel());
         Console.WriteLine(automobile.GetMiles() + " miles");
         Console.WriteLine("$" + automobile.GetPrice());
+        Console.WriteLine(CarMessage() + automobile.GetMakeModel());
       }
     }
   }

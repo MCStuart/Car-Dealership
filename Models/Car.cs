@@ -8,7 +8,7 @@ namespace Dealership {
     {
       Price = newPrice;
     }
-    
+
     private string MakeModel;
     private int Price;
     private int Miles;
@@ -39,6 +39,12 @@ namespace Dealership {
     {
       return (Price < maxPrice);
     }
+
+    public string CarMessage()
+    {
+      return "Hello ?";
+    }
+
   }
 
 }
