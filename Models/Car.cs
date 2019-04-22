@@ -40,9 +40,14 @@ namespace Dealership {
       return (Price < maxPrice);
     }
 
+    public bool WorthMiles(int maxMileage)
+    {
+      return (Miles < maxMileage);
+    }
+
     public string CarMessage()
     {
-      return "Hello ?";
+      return "Are you interested in the ";
     }
 
   }
