@@ -31,6 +31,11 @@ namespace Dealership {
         }
       }
 
+      if (CarsMatchingSearch.Count == 0)
+      {
+        Console.WriteLine("We're sorry. We do not have any cars that meet your requirements.");
+      }
+
       foreach(Car automobile in CarsMatchingSearch)
       {
         Console.WriteLine(automobile.MakeModel);
