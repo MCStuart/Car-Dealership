@@ -4,10 +4,10 @@ namespace Dealership {
 
   class Car
   {
-    public string MakeModel;
-    public int Price;
-    public int Miles;
-    public string CarComment;
+    private string MakeModel;
+    private int Price;
+    private int Miles;
+    private string CarComment;
 
     public Car(string makeModel, int price, int miles, string carComment)
     {
@@ -15,6 +15,31 @@ namespace Dealership {
       Price = price;
       Miles = miles;
       CarComment = carComment;
+    }
+
+    public string GetMakeModel()
+    {
+      return MakeModel;
+    }
+
+    public int GetPrice()
+    {
+      return Price;
+    }
+
+    public int GetMiles()
+    {
+      return Miles;
+    }
+
+    public string GetCarComment()
+    {
+      return CarComment;
+    }
+
+    public void SetPrice(int newPrice)
+    {
+      Price = newPrice;
     }
 
     public bool WorthBuying(int maxPrice, int maxMiles)
