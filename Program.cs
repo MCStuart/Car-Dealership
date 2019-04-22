@@ -14,6 +14,8 @@ namespace Dealership {
 
       List<Car> Cars = new List<Car>() { porsche, ford, lexus, mercedes };
 
+      lexus.SetPrice(2000);
+
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
       int maxPrice = int.Parse(stringMaxPrice);
@@ -30,9 +32,12 @@ namespace Dealership {
 
       foreach(Car automobile in CarsMatchingSearch)
       {
-        Console.WriteLine(automobile.MakeModel);
+        Console.WriteLine("-----------------");
+        Console.WriteLine(automobile.GetMakeModel());
+        Console.WriteLine(automobile.GetMiles() + " miles");
+        Console.WriteLine("$" + automobile.GetPrice());
       }
     }
   }
-  
+
 }
